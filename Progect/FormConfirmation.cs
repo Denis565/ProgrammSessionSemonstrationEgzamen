@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Progect
 {
-    public partial class FormInformation : Form
+    public partial class FormConfirmation : Form
     {
         private DateTime timeNow;
 
-        public FormInformation()
+        public FormConfirmation(string nameRacer,string sum)
         {
             InitializeComponent();
             timer1.Start();
@@ -26,6 +26,9 @@ namespace Progect
             timeNow = DateTime.Now;
 
             headDate.Text = $"Москва, Россия {timeNow.ToLongDateString()}";
+
+            donationAmount.Text = sum;
+            this.nameRacer.Text = $"{nameRacer} из Russia";
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -51,60 +54,10 @@ namespace Progect
 
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             new Form1().Show();
             this.Hide();
-        }
-
-        private void panelTop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timeEndLable_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnKartSkills_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPreviousResults_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnListCharitableOrganizations_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

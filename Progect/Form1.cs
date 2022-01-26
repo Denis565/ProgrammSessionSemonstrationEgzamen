@@ -57,7 +57,8 @@ namespace Progect
 
         private void pictureBoxRegistrationSponsor_Click(object sender, EventArgs e)
         {
-
+            new FormRegistrationRacer().Show();
+            this.Hide();
         }
 
         private void pictureBoxInformation_Click(object sender, EventArgs e)
@@ -117,6 +118,11 @@ namespace Progect
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

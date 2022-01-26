@@ -74,10 +74,10 @@ namespace Progect
             // 
             this.headDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.headDate.AutoSize = true;
-            this.headDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.headDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.headDate.Location = new System.Drawing.Point(423, 76);
             this.headDate.Name = "headDate";
-            this.headDate.Size = new System.Drawing.Size(213, 32);
+            this.headDate.Size = new System.Drawing.Size(178, 29);
             this.headDate.TabIndex = 1;
             this.headDate.Text = "Kart Skills 2017";
             this.headDate.Click += new System.EventHandler(this.headDate_Click);
@@ -102,7 +102,7 @@ namespace Progect
             this.panel1.Controls.Add(this.timeEndLable);
             this.panel1.Location = new System.Drawing.Point(-1, 571);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1337, 73);
+            this.panel1.Size = new System.Drawing.Size(1337, 85);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -110,10 +110,10 @@ namespace Progect
             // 
             this.timeEndLable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.timeEndLable.AutoSize = true;
-            this.timeEndLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.timeEndLable.Location = new System.Drawing.Point(303, 26);
+            this.timeEndLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.timeEndLable.Location = new System.Drawing.Point(114, 29);
             this.timeEndLable.Name = "timeEndLable";
-            this.timeEndLable.Size = new System.Drawing.Size(148, 25);
+            this.timeEndLable.Size = new System.Drawing.Size(178, 29);
             this.timeEndLable.TabIndex = 2;
             this.timeEndLable.Text = "Kart Skills 2017";
             this.timeEndLable.Click += new System.EventHandler(this.timeEndLable_Click);
@@ -234,6 +234,7 @@ namespace Progect
             this.MinimumSize = new System.Drawing.Size(1350, 689);
             this.Name = "Form1";
             this.Text = "Kart Skills 2017";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panel1.ResumeLayout(false);

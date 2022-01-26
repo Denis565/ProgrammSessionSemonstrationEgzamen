@@ -9,3 +9,5 @@ D:\Мпт\4курс\2 семестр\Демонстрационный экзам
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.exe
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.pdb
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormInformation.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormConfirmation.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRegistrationRacer.resources
