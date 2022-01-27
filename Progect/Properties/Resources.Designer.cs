@@ -73,29 +73,9 @@ namespace Progect.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dengi1 {
-            get {
-                object obj = ResourceManager.GetObject("Dengi1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Informatsia {
             get {
                 object obj = ResourceManager.GetObject("Informatsia", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Informatsia1 {
-            get {
-                object obj = ResourceManager.GetObject("Informatsia1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,29 +93,9 @@ namespace Progect.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Klyuch1 {
+        internal static System.Drawing.Bitmap logotip_charity {
             get {
-                object obj = ResourceManager.GetObject("Klyuch1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logotip {
-            get {
-                object obj = ResourceManager.GetObject("logotip", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logotip1 {
-            get {
-                object obj = ResourceManager.GetObject("logotip1", resourceCulture);
+                object obj = ResourceManager.GetObject("logotip_charity", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

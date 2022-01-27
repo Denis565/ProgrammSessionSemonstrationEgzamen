@@ -32,7 +32,7 @@ namespace Progect
         }
         private void btnListCharitableOrganizations_Click(object sender, EventArgs e)
         {
-            FormListСharitableOrganizations formListСharitableOrganizations = new FormListСharitableOrganizations();
+            FormRosterСharitableOrganizations formListСharitableOrganizations = new FormRosterСharitableOrganizations();
             formListСharitableOrganizations.Show();
             this.Hide();
         }

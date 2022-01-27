@@ -94,12 +94,6 @@
     <Compile Include="FormInformation.Designer.cs">
       <DependentUpon>FormInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormListСharitableOrganizations.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormListСharitableOrganizations.Designer.cs">
-      <DependentUpon>FormListСharitableOrganizations.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormRacer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +105,12 @@
     </Compile>
     <Compile Include="FormRegistrationRacer.Designer.cs">
       <DependentUpon>FormRegistrationRacer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRosterСharitableOrganizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRosterСharitableOrganizations.Designer.cs">
+      <DependentUpon>FormRosterСharitableOrganizations.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,14 +138,14 @@
     <EmbeddedResource Include="FormInformation.resx">
       <DependentUpon>FormInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormListСharitableOrganizations.resx">
-      <DependentUpon>FormListСharitableOrganizations.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormRacer.resx">
       <DependentUpon>FormRacer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRacer.resx">
       <DependentUpon>FormRegistrationRacer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRosterСharitableOrganizations.resx">
+      <DependentUpon>FormRosterСharitableOrganizations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,7 +176,7 @@
     <Content Include="Resources\Dengi.png" />
     <Content Include="Resources\Informatsia.png" />
     <Content Include="Resources\Klyuch.png" />
-    <Content Include="Resources\logotip.jpg" />
+    <None Include="Resources\logotip_charity.jpg" />
     <Content Include="Resources\Shlem.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
