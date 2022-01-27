@@ -100,11 +100,11 @@
     <Compile Include="FormRacer.Designer.cs">
       <DependentUpon>FormRacer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistrationRacer.cs">
+    <Compile Include="FormRegistrationSponser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistrationRacer.Designer.cs">
-      <DependentUpon>FormRegistrationRacer.cs</DependentUpon>
+    <Compile Include="FormRegistrationSponser.Designer.cs">
+      <DependentUpon>FormRegistrationSponser.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRosterСharitableOrganizations.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,8 +142,8 @@
     <EmbeddedResource Include="FormRacer.resx">
       <DependentUpon>FormRacer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistrationRacer.resx">
-      <DependentUpon>FormRegistrationRacer.cs</DependentUpon>
+    <EmbeddedResource Include="FormRegistrationSponser.resx">
+      <DependentUpon>FormRegistrationSponser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRosterСharitableOrganizations.resx">
       <DependentUpon>FormRosterСharitableOrganizations.cs</DependentUpon>

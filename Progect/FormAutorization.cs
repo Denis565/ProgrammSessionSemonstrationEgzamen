@@ -13,6 +13,7 @@ namespace Progect
     public partial class FormAutorization : Form
     {
         private Customer customer = new Customer();
+        private SQLManager sqlManager = new SQLManager();
         public FormAutorization()
         {
             InitializeComponent();
@@ -33,26 +34,30 @@ namespace Progect
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            switch (email.Text) 
+            DataTable dataTable = sqlManager.ReturnTable($@"select * from [dbo].[Autarization]('{email.Text}','{password.Text}')");
+            if (dataTable.Rows.Count > 0)
             {
-                case "racer":
-                    new FormRacer().Show();
-                    this.Hide();
-                    break;
+                switch (dataTable.Rows[0][0].ToString())
+                {
+                    case "Racer":
+                        new FormRacer().Show();
+                        this.Hide();
+                        break;
 
-                case "coordinator":
-                    new FormCoordinatorcs().Show();
-                    this.Hide();
-                    break;
+                    case "Coordinator":
+                        new FormCoordinatorcs().Show();
+                        this.Hide();
+                        break;
 
-                case "admin":
-                    new FormAdmin().Show();
-                    this.Hide();
-                    break;
+                    case "Administrator":
+                        new FormAdmin().Show();
+                        this.Hide();
+                        break;
 
-                default:
-                    MessageBox.Show("Авторизация не пройдена.");
-                    break;
+                    default:
+                        MessageBox.Show("Авторизация не пройдена.");
+                        break;
+                }
             }
         }
     }

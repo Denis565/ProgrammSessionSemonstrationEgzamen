@@ -34,7 +34,7 @@ namespace Progect
 
         private void pictureBoxRegistrationSponsor_Click(object sender, EventArgs e)
         {
-            new FormRegistrationRacer().Show();
+            new FormRegistrationSponser().Show();
             this.Hide();
         }
 

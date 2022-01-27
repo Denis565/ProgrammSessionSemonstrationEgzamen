@@ -25,7 +25,10 @@ namespace Progect
             panelTop.BackColor = Color.FromArgb(180, 180, 180);
 
             donationAmount.Text = sum;
-            this.nameRacer.Text = $"{nameRacer} из Russia";
+
+            string [] arrayNameRecer = nameRacer.Split('(');
+
+            this.nameRacer.Text = $"{arrayNameRecer[0]} из {arrayNameRecer[1].Replace(")","")}";
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
