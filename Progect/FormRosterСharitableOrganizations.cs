@@ -63,13 +63,14 @@ namespace Progect
                 labelNameOrg.TabIndex = 19;
                 labelNameOrg.Text = "Наименование благотворительной оргонизации";
 
+
                 labelInform.AutoSize = true;
-                labelInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+                labelInform.MaximumSize = new System.Drawing.Size(2000, 70);
                 labelInform.Size = new System.Drawing.Size(620, 48);
+                labelInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelInform.TabIndex = 20;
-                labelInform.Text = "Описание благотворительности. Описание благотворительности.";
-
-
+                labelInform.Text = "Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.";
+ 
                 if (lastOldPictureBox == null)
                 {
                     pictureBox.Location = new System.Drawing.Point(4, 0);
