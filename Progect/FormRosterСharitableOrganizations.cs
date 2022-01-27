@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,10 +14,13 @@ namespace Progect
     public partial class FormRosterСharitableOrganizations : Form
     {
         private Customer customer = new Customer();
+        private SQLManager sqlManager = new SQLManager();
 
-        public static List<PictureBox> PictureBoxList = new List<PictureBox>();
-        public static List<Label> LableNameOrganizationList = new List<Label>();
-        public static List<Label> LableInformationList = new List<Label>();
+        private static List<PictureBox> PictureBoxList = new List<PictureBox>();
+        private static List<Label> LableNameOrganizationList = new List<Label>();
+        private static List<Label> LableInformationList = new List<Label>();
+
+        private List<string> listNameResurces = new List<string>();
 
         public FormRosterСharitableOrganizations()
         {
@@ -30,17 +34,22 @@ namespace Progect
             panelTop.BackColor = Color.FromArgb(180, 180, 180);
 
             panelBox.AutoScroll = true;
-            init_list_сharity();
+
+            DataTable dataTable = sqlManager.ReturnTable($@"select * from [dbo].[List_Charity]");
+
+            foreach (PropertyInfo property in typeof(Properties.Resources).GetProperties(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
+            {
+                listNameResurces.Add(property.Name);
+            }
+
+            init_list_сharity(dataTable);
         }
 
-        private async void init() 
+        private async void init_list_сharity(DataTable dataTable)
         {
-            await Task.Run(() => init_list_сharity());
-        }
+            int count = dataTable.Rows.Count;
 
-        private async void init_list_сharity()
-        {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < count; i++)
             {
                 PictureBox pictureBox = new PictureBox();
                 Label labelNameOrg = new Label();
@@ -50,7 +59,21 @@ namespace Progect
                 Label lastOldLableNameOrganization = LableNameOrganizationList.LastOrDefault();
                 Label lastOldLableInformation = LableInformationList.LastOrDefault();
 
-                pictureBox.Image = Properties.Resources.logotip_charity;
+                string[] imageNameList = dataTable.Rows[i][3].ToString().Split('.');
+
+                string nameImageFile = imageNameList[imageNameList.Count() - 2];
+                Bitmap bitmap;
+
+                if (listNameResurces.Contains(nameImageFile))
+                {
+                    Image im = (Image)Properties.Resources.ResourceManager.GetObject(nameImageFile, System.Globalization.CultureInfo.CurrentCulture);
+                    bitmap = (Bitmap)im;
+                }
+                else {
+                    bitmap = Properties.Resources.logotip_charity;
+                }
+
+                pictureBox.Image = bitmap;
                 pictureBox.Size = new System.Drawing.Size(100, 100);
                 pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
                 pictureBox.TabIndex = 18;
@@ -61,7 +84,7 @@ namespace Progect
                 labelNameOrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelNameOrg.Size = new System.Drawing.Size(588, 29);
                 labelNameOrg.TabIndex = 19;
-                labelNameOrg.Text = "Наименование благотворительной оргонизации";
+                labelNameOrg.Text = dataTable.Rows[i][1].ToString();
 
 
                 labelInform.AutoSize = true;
@@ -69,7 +92,7 @@ namespace Progect
                 labelInform.Size = new System.Drawing.Size(620, 48);
                 labelInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelInform.TabIndex = 20;
-                labelInform.Text = "Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.";
+                labelInform.Text = dataTable.Rows[i][2].ToString();
  
                 if (lastOldPictureBox == null)
                 {
