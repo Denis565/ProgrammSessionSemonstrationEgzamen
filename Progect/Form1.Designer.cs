@@ -55,7 +55,6 @@ namespace Progect
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // panelTop
             // 
@@ -68,7 +67,6 @@ namespace Progect
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1337, 138);
             this.panelTop.TabIndex = 0;
-            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             // 
             // headDate
             // 
@@ -80,7 +78,6 @@ namespace Progect
             this.headDate.Size = new System.Drawing.Size(178, 29);
             this.headDate.TabIndex = 1;
             this.headDate.Text = "Kart Skills 2017";
-            this.headDate.Click += new System.EventHandler(this.headDate_Click);
             // 
             // headText
             // 
@@ -92,7 +89,6 @@ namespace Progect
             this.headText.Size = new System.Drawing.Size(229, 32);
             this.headText.TabIndex = 0;
             this.headText.Text = "Kart Skills 2017";
-            this.headText.Click += new System.EventHandler(this.headText_Click);
             // 
             // panel1
             // 
@@ -104,7 +100,6 @@ namespace Progect
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1337, 85);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // timeEndLable
             // 
@@ -116,7 +111,6 @@ namespace Progect
             this.timeEndLable.Size = new System.Drawing.Size(178, 29);
             this.timeEndLable.TabIndex = 2;
             this.timeEndLable.Text = "Kart Skills 2017";
-            this.timeEndLable.Click += new System.EventHandler(this.timeEndLable_Click);
             // 
             // pictureBoxReqgistrationRacer
             // 
@@ -164,7 +158,6 @@ namespace Progect
             this.pictureBoxEntrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEntrance.TabIndex = 6;
             this.pictureBoxEntrance.TabStop = false;
-            this.pictureBoxEntrance.Click += new System.EventHandler(this.pictureBoxEntrance_Click);
             // 
             // label1
             // 
@@ -176,7 +169,6 @@ namespace Progect
             this.label1.Size = new System.Drawing.Size(214, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Регестрация гонщика";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -188,7 +180,6 @@ namespace Progect
             this.label2.Size = new System.Drawing.Size(221, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Регестрация спонсора";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -200,7 +191,6 @@ namespace Progect
             this.label3.Size = new System.Drawing.Size(112, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "О событии";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -212,7 +202,6 @@ namespace Progect
             this.label4.Size = new System.Drawing.Size(157, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Вход в систему";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
@@ -233,8 +222,8 @@ namespace Progect
             this.MaximumSize = new System.Drawing.Size(1350, 689);
             this.MinimumSize = new System.Drawing.Size(1350, 689);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panel1.ResumeLayout(false);

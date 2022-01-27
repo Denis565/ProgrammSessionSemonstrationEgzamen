@@ -48,7 +48,6 @@ namespace Progect
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // panelTop
             // 
@@ -62,7 +61,6 @@ namespace Progect
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1337, 138);
             this.panelTop.TabIndex = 10;
-            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             // 
             // back
             // 
@@ -85,7 +83,6 @@ namespace Progect
             this.headDate.Size = new System.Drawing.Size(178, 29);
             this.headDate.TabIndex = 1;
             this.headDate.Text = "Kart Skills 2017";
-            this.headDate.Click += new System.EventHandler(this.headDate_Click);
             // 
             // headText
             // 
@@ -97,7 +94,6 @@ namespace Progect
             this.headText.Size = new System.Drawing.Size(229, 32);
             this.headText.TabIndex = 0;
             this.headText.Text = "Kart Skills 2017";
-            this.headText.Click += new System.EventHandler(this.headText_Click);
             // 
             // panel1
             // 
@@ -109,7 +105,6 @@ namespace Progect
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1337, 84);
             this.panel1.TabIndex = 11;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // timeEndLable
             // 
@@ -121,7 +116,6 @@ namespace Progect
             this.timeEndLable.Size = new System.Drawing.Size(148, 25);
             this.timeEndLable.TabIndex = 2;
             this.timeEndLable.Text = "Kart Skills 2017";
-            this.timeEndLable.Click += new System.EventHandler(this.timeEndLable_Click);
             // 
             // btnKartSkills
             // 
@@ -132,7 +126,6 @@ namespace Progect
             this.btnKartSkills.TabIndex = 3;
             this.btnKartSkills.Text = "Kart Skills 2017";
             this.btnKartSkills.UseVisualStyleBackColor = true;
-            this.btnKartSkills.Click += new System.EventHandler(this.btnKartSkills_Click);
             // 
             // label1
             // 
@@ -144,7 +137,6 @@ namespace Progect
             this.label1.Size = new System.Drawing.Size(299, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Подробная информация";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnPreviousResults
             // 
@@ -155,7 +147,6 @@ namespace Progect
             this.btnPreviousResults.TabIndex = 12;
             this.btnPreviousResults.Text = "Предыдущие результаты";
             this.btnPreviousResults.UseVisualStyleBackColor = true;
-            this.btnPreviousResults.Click += new System.EventHandler(this.btnPreviousResults_Click);
             // 
             // btnListCharitableOrganizations
             // 
@@ -183,6 +174,7 @@ namespace Progect
             this.MaximumSize = new System.Drawing.Size(1350, 689);
             this.MinimumSize = new System.Drawing.Size(1350, 689);
             this.Name = "FormInformation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();

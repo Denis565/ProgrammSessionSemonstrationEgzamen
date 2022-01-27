@@ -428,6 +428,7 @@ namespace Progect
             this.MaximumSize = new System.Drawing.Size(1244, 748);
             this.MinimumSize = new System.Drawing.Size(1244, 748);
             this.Name = "FormRegistrationRacer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();

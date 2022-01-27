@@ -11,3 +11,10 @@ D:\Мпт\4курс\2 семестр\Демонстрационный экзам
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormInformation.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormConfirmation.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRegistrationRacer.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormListСharitableOrganizations.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormCheckingEnteredData.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormAutorization.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormContact.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRacer.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormAdmin.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormCoordinatorcs.resources

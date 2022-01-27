@@ -45,11 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAutorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutorization.Designer.cs">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckingEnteredData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckingEnteredData.Designer.cs">
+      <DependentUpon>FormCheckingEnteredData.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConfirmation.cs">
       <SubType>Form</SubType>
@@ -57,11 +76,35 @@
     <Compile Include="FormConfirmation.Designer.cs">
       <DependentUpon>FormConfirmation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContact.Designer.cs">
+      <DependentUpon>FormContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCoordinatorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoordinatorcs.Designer.cs">
+      <DependentUpon>FormCoordinatorcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormInformation.Designer.cs">
       <DependentUpon>FormInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListСharitableOrganizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListСharitableOrganizations.Designer.cs">
+      <DependentUpon>FormListСharitableOrganizations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacer.Designer.cs">
+      <DependentUpon>FormRacer.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistrationRacer.cs">
       <SubType>Form</SubType>
@@ -74,28 +117,50 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutorization.resx">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckingEnteredData.resx">
+      <DependentUpon>FormCheckingEnteredData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConfirmation.resx">
       <DependentUpon>FormConfirmation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormContact.resx">
+      <DependentUpon>FormContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCoordinatorcs.resx">
+      <DependentUpon>FormCoordinatorcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInformation.resx">
       <DependentUpon>FormInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListСharitableOrganizations.resx">
+      <DependentUpon>FormListСharitableOrganizations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacer.resx">
+      <DependentUpon>FormRacer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRacer.resx">
       <DependentUpon>FormRegistrationRacer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -105,8 +170,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resurses\" />
+    <Content Include="Resources\checkered-flag-sports-tool.ico" />
+    <Content Include="Resources\Dengi.png" />
+    <Content Include="Resources\Informatsia.png" />
+    <Content Include="Resources\Klyuch.png" />
+    <Content Include="Resources\logotip.jpg" />
+    <Content Include="Resources\Shlem.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,20 +12,17 @@ namespace Progect
 {
     public partial class FormRegistrationRacer : Form
     {
-        private DateTime timeNow;
+        private Customer customer = new Customer();
 
         public FormRegistrationRacer()
         {
             InitializeComponent();
-            timer1.Start();
-            timer1.Interval = 1000;
-            timer1.Enabled = true;
-            timer1.Tick += Timer1_Tick;
+            customer.timer1 = timer1;
+            customer.panelTop = panelTop;
+            customer.timeEndLable = timeEndLable;
+            customer.timer_tick();
+            headDate.Text = $"Москва, Россия {DateTime.Now.ToLongDateString()}";
             panelTop.BackColor = Color.FromArgb(180, 180, 180);
-
-            timeNow = DateTime.Now;
-
-            headDate.Text = $"Москва, Россия {timeNow.ToLongDateString()}";
 
             racer.Items.AddRange(new string [] {
                 "Иванов Иван (209)",

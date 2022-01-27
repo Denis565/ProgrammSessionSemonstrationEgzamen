@@ -12,43 +12,17 @@ namespace Progect
 {
     public partial class FormInformation : Form
     {
-        private DateTime timeNow;
+        private Customer customer = new Customer();
 
         public FormInformation()
         {
             InitializeComponent();
-            timer1.Start();
-            timer1.Interval = 1000;
-            timer1.Enabled = true;
-            timer1.Tick += Timer1_Tick;
+            customer.timer1 = timer1;
+            customer.panelTop = panelTop;
+            customer.timeEndLable = timeEndLable;
+            customer.timer_tick();
+            headDate.Text = $"Москва, Россия {DateTime.Now.ToLongDateString()}";
             panelTop.BackColor = Color.FromArgb(180, 180, 180);
-
-            timeNow = DateTime.Now;
-
-            headDate.Text = $"Москва, Россия {timeNow.ToLongDateString()}";
-        }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            DateTime dateTimeEnd = new DateTime(2027, 06, 20, 00, 00, 00);
-            DateTime res = new DateTime((dateTimeEnd - DateTime.Now).Ticks);
-
-            double sec = res.Second - 1;
-            double secresult = sec < 0 ? 0 : sec;
-
-            timeEndLable.Text = $"До начала события осталось {res.Year - 1} лет, " +
-                $"{res.Month - 1} месяцев, " +
-                $"{res.Day - 1} дней, " +
-                $"{res.Hour - 1} часов, " +
-                $"{res.Minute - 1} минут и " +
-                $"{secresult} секунд";
-
-            if (res.Second < 0)
-            {
-                timer1.Stop();
-            }
-
-
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -56,55 +30,11 @@ namespace Progect
             new Form1().Show();
             this.Hide();
         }
-
-        private void panelTop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void headText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timeEndLable_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnKartSkills_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPreviousResults_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnListCharitableOrganizations_Click(object sender, EventArgs e)
         {
-
+            FormListСharitableOrganizations formListСharitableOrganizations = new FormListСharitableOrganizations();
+            formListСharitableOrganizations.Show();
+            this.Hide();
         }
     }
 }

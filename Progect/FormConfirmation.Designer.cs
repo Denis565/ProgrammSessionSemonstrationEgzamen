@@ -30,6 +30,7 @@ namespace Progect
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfirmation));
             this.label13 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.donationAmount = new System.Windows.Forms.Label();
@@ -86,7 +87,7 @@ namespace Progect
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.Location = new System.Drawing.Point(525, 297);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(204, 39);
+            this.label10.Size = new System.Drawing.Size(198, 38);
             this.label10.TabIndex = 61;
             this.label10.Text = "Фонд собак";
             // 
@@ -97,7 +98,7 @@ namespace Progect
             this.nameRacer.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameRacer.Location = new System.Drawing.Point(442, 229);
             this.nameRacer.Name = "nameRacer";
-            this.nameRacer.Size = new System.Drawing.Size(313, 39);
+            this.nameRacer.Size = new System.Drawing.Size(303, 38);
             this.nameRacer.TabIndex = 60;
             this.nameRacer.Text = "Иванов Иван (207)";
             // 
@@ -108,7 +109,7 @@ namespace Progect
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(339, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(596, 39);
+            this.label1.Size = new System.Drawing.Size(578, 38);
             this.label1.TabIndex = 43;
             this.label1.Text = "Спасибо за спонсорскую поддержку";
             // 
@@ -168,6 +169,9 @@ namespace Progect
             this.panelTop.Size = new System.Drawing.Size(1231, 129);
             this.panelTop.TabIndex = 44;
             // 
+            // timer1
+            // 
+            // 
             // FormConfirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,8 +185,10 @@ namespace Progect
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormConfirmation";
-            this.Text = "FormConfirmation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kart Skills 2017";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelTop.ResumeLayout(false);
