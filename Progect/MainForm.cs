@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Progect
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private Customer customer = new Customer();
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 

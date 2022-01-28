@@ -27,7 +27,7 @@ namespace Progect
 
         private void back_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new MainForm().Show();
             this.Hide();
         }
         private void btnListCharitableOrganizations_Click(object sender, EventArgs e)

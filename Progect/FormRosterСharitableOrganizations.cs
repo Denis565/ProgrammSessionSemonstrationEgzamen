@@ -88,7 +88,7 @@ namespace Progect
 
 
                 labelInform.AutoSize = true;
-                labelInform.MaximumSize = new System.Drawing.Size(1300, 75);
+                labelInform.MaximumSize = new System.Drawing.Size(1250, 75); ;
                 labelInform.Size = new System.Drawing.Size(620, 48);
                 labelInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelInform.TabIndex = 20;

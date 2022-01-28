@@ -28,7 +28,7 @@ namespace Progect
 
         private void logout_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new MainForm().Show();
             this.Hide();
         }
 
