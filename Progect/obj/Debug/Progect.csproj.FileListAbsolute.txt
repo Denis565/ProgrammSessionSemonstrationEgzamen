@@ -2,7 +2,6 @@ D:\Мпт\4курс\2 семестр\Демонстрационный экзам
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\bin\Debug\Progect.exe
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\bin\Debug\Progect.pdb
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.csproj.AssemblyReference.cache
-D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.Form1.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.Properties.Resources.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.csproj.GenerateResource.cache
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.csproj.CoreCompileInputs.cache
@@ -18,3 +17,4 @@ D:\Мпт\4курс\2 семестр\Демонстрационный экзам
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormCoordinatorcs.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRosterСharitableOrganizations.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRegistrationSponser.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.MainForm.resources
