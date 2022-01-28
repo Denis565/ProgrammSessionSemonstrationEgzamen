@@ -124,9 +124,6 @@ namespace Progect
             this.panelTop.Size = new System.Drawing.Size(1231, 129);
             this.panelTop.TabIndex = 69;
             // 
-            // timer1
-            // 
-            // 
             // yes
             // 
             this.yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -160,6 +157,8 @@ namespace Progect
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1244, 748);
+            this.MinimumSize = new System.Drawing.Size(1244, 748);
             this.Name = "FormCheckingEnteredData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";

@@ -88,7 +88,7 @@ namespace Progect
 
 
                 labelInform.AutoSize = true;
-                labelInform.MaximumSize = new System.Drawing.Size(2000, 70);
+                labelInform.MaximumSize = new System.Drawing.Size(1300, 75);
                 labelInform.Size = new System.Drawing.Size(620, 48);
                 labelInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 labelInform.TabIndex = 20;
@@ -96,15 +96,15 @@ namespace Progect
  
                 if (lastOldPictureBox == null)
                 {
-                    pictureBox.Location = new System.Drawing.Point(4, 0);
-                    labelNameOrg.Location = new System.Drawing.Point(160, 10);
-                    labelInform.Location = new System.Drawing.Point(160, 40);
+                    pictureBox.Location = new System.Drawing.Point(55, 0);
+                    labelNameOrg.Location = new System.Drawing.Point(211, 10);
+                    labelInform.Location = new System.Drawing.Point(211, 40);
                 }
                 else
                 {
-                    pictureBox.Location = new System.Drawing.Point(lastOldPictureBox.Location.X, lastOldPictureBox.Location.Y + 120);
-                    labelNameOrg.Location = new System.Drawing.Point(lastOldLableNameOrganization.Location.X, lastOldLableNameOrganization.Location.Y + 120);
-                    labelInform.Location = new System.Drawing.Point(lastOldLableInformation.Location.X, lastOldLableInformation.Location.Y + 120);
+                    pictureBox.Location = new System.Drawing.Point(lastOldPictureBox.Location.X, lastOldPictureBox.Location.Y + 140);
+                    labelNameOrg.Location = new System.Drawing.Point(lastOldLableNameOrganization.Location.X, lastOldLableNameOrganization.Location.Y + 140);
+                    labelInform.Location = new System.Drawing.Point(lastOldLableInformation.Location.X, lastOldLableInformation.Location.Y + 140);
                 }
 
                 PictureBoxList.Add(pictureBox);

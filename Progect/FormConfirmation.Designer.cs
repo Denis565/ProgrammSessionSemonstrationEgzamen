@@ -169,9 +169,6 @@ namespace Progect
             this.panelTop.Size = new System.Drawing.Size(1231, 129);
             this.panelTop.TabIndex = 44;
             // 
-            // timer1
-            // 
-            // 
             // FormConfirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,6 +183,8 @@ namespace Progect
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1244, 748);
+            this.MinimumSize = new System.Drawing.Size(1244, 748);
             this.Name = "FormConfirmation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";

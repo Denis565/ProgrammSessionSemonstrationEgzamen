@@ -192,6 +192,8 @@ namespace Progect
             this.Controls.Add(this.editingProfile);
             this.Controls.Add(this.registerRace);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1244, 748);
+            this.MinimumSize = new System.Drawing.Size(1244, 748);
             this.Name = "FormRacer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "";

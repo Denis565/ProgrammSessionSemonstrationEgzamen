@@ -190,6 +190,8 @@ namespace Progect
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.loginbtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1244, 748);
+            this.MinimumSize = new System.Drawing.Size(1244, 748);
             this.Name = "FormAutorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";
