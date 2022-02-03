@@ -13,6 +13,8 @@ namespace Progect
     public partial class FormRacer : Form
     {
         private Customer customer = new Customer();
+        DataTable dataTableImport;
+        public DataTable Data_Table { set { dataTableImport = value; } }
 
         public FormRacer()
         {
@@ -37,6 +39,14 @@ namespace Progect
             string phone = "8-985-987-09-15";
             string email = "test.testDenis@mail.ru";
             new FormContact(phone,email).Show();
+        }
+
+        private void editingProfile_Click(object sender, EventArgs e)
+        {
+            FormEditingProfile formEditingProfile = new FormEditingProfile();
+            formEditingProfile.Data_Table = dataTableImport;
+            formEditingProfile.Show();
+            this.Hide();
         }
     }
 }

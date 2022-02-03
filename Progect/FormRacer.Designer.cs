@@ -136,6 +136,7 @@ namespace Progect
             this.editingProfile.TabIndex = 76;
             this.editingProfile.Text = "Редактирование профиля";
             this.editingProfile.UseVisualStyleBackColor = true;
+            this.editingProfile.Click += new System.EventHandler(this.editingProfile_Click);
             // 
             // registerRace
             // 

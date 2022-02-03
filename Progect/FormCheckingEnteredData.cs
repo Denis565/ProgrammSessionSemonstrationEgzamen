@@ -39,7 +39,9 @@ namespace Progect
 
         private void no_Click(object sender, EventArgs e)
         {
-
+            FormDriverRegistrationMenu formDriverRegistrationMenu = new FormDriverRegistrationMenu();
+            formDriverRegistrationMenu.Show();
+            this.Hide();
         }
 
     }

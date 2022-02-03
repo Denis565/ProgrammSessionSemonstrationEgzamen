@@ -85,5 +85,62 @@ namespace Progect
                 }
             }
         }
+
+        public bool performingProcedure(string[] value, string nameFunction, string[] parameters)
+        {
+            using (SqlCommand cmd = new SqlCommand($@"{nameFunction}", conection))
+            {
+                try
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        cmd.Parameters.Add(parameters[i], SqlDbType.VarChar).Value = value[i];
+                    }
+                    conection.Open();
+                    cmd.ExecuteNonQuery();
+                    conection.Close();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    conection.Close();
+                    return false;
+                }
+            }
+        }
+
+        public bool performingProcedure_Image(string[] value, string nameFunction, string[] parameters, byte [] imageData)
+        {
+            using (SqlCommand cmd = new SqlCommand($@"{nameFunction}", conection))
+            {
+                try
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        if (parameters[i] == "Image")
+                        {
+                            cmd.Parameters.Add(parameters[i], SqlDbType.Image).Value = imageData;
+                        }
+                        else
+                        {
+                            cmd.Parameters.Add(parameters[i], SqlDbType.VarChar).Value = value[i];
+                        }
+                    }
+                    conection.Open();
+                    cmd.ExecuteNonQuery();
+                    conection.Close();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    conection.Close();
+                    return false;
+                }
+            }
+        }
     }
 }

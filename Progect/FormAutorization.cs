@@ -40,7 +40,9 @@ namespace Progect
                 switch (dataTable.Rows[0][0].ToString())
                 {
                     case "Racer":
-                        new FormRacer().Show();
+                        FormRacer formRaser = new FormRacer();
+                        formRaser.Data_Table = dataTable;
+                        formRaser.Show();
                         this.Hide();
                         break;
 
