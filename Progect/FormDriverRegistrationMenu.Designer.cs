@@ -86,7 +86,6 @@ namespace Progect
             this.timeEndLable.Size = new System.Drawing.Size(178, 29);
             this.timeEndLable.TabIndex = 2;
             this.timeEndLable.Text = "Kart Skills 2017";
-            this.timeEndLable.Click += new System.EventHandler(this.timeEndLable_Click);
             // 
             // panel1
             // 
@@ -98,7 +97,6 @@ namespace Progect
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1231, 85);
             this.panel1.TabIndex = 90;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // headDate
             // 
@@ -110,7 +108,6 @@ namespace Progect
             this.headDate.Size = new System.Drawing.Size(178, 29);
             this.headDate.TabIndex = 1;
             this.headDate.Text = "Kart Skills 2017";
-            this.headDate.Click += new System.EventHandler(this.headDate_Click);
             // 
             // headText
             // 
@@ -122,7 +119,6 @@ namespace Progect
             this.headText.Size = new System.Drawing.Size(229, 32);
             this.headText.TabIndex = 0;
             this.headText.Text = "Kart Skills 2017";
-            this.headText.Click += new System.EventHandler(this.headText_Click);
             // 
             // panelTop
             // 
@@ -136,11 +132,9 @@ namespace Progect
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1231, 129);
             this.panelTop.TabIndex = 89;
-            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // email
             // 
@@ -149,7 +143,6 @@ namespace Progect
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(375, 34);
             this.email.TabIndex = 82;
-            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
             // 
             // label2
             // 
@@ -161,7 +154,6 @@ namespace Progect
             this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 81;
             this.label2.Text = "Email:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // password
             // 
@@ -170,7 +162,6 @@ namespace Progect
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(375, 34);
             this.password.TabIndex = 92;
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // label3
             // 
@@ -182,7 +173,6 @@ namespace Progect
             this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 91;
             this.label3.Text = "Пароль:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // passwordRepeat
             // 
@@ -191,7 +181,6 @@ namespace Progect
             this.passwordRepeat.Name = "passwordRepeat";
             this.passwordRepeat.Size = new System.Drawing.Size(375, 34);
             this.passwordRepeat.TabIndex = 94;
-            this.passwordRepeat.TextChanged += new System.EventHandler(this.passwordRepeat_TextChanged);
             // 
             // label1
             // 
@@ -203,7 +192,6 @@ namespace Progect
             this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 93;
             this.label1.Text = "Повтарить пароль:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // surname
             // 
@@ -212,7 +200,6 @@ namespace Progect
             this.surname.Name = "surname";
             this.surname.Size = new System.Drawing.Size(375, 34);
             this.surname.TabIndex = 98;
-            this.surname.TextChanged += new System.EventHandler(this.surname_TextChanged);
             // 
             // label4
             // 
@@ -224,7 +211,6 @@ namespace Progect
             this.label4.Size = new System.Drawing.Size(109, 25);
             this.label4.TabIndex = 97;
             this.label4.Text = "Фамилия:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // name
             // 
@@ -233,7 +219,6 @@ namespace Progect
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(375, 34);
             this.name.TabIndex = 96;
-            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // label5
             // 
@@ -245,7 +230,6 @@ namespace Progect
             this.label5.Size = new System.Drawing.Size(60, 25);
             this.label5.TabIndex = 95;
             this.label5.Text = "Имя:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // gender
             // 
@@ -256,7 +240,6 @@ namespace Progect
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(375, 28);
             this.gender.TabIndex = 99;
-            this.gender.SelectedIndexChanged += new System.EventHandler(this.gender_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -268,7 +251,6 @@ namespace Progect
             this.label6.Size = new System.Drawing.Size(55, 25);
             this.label6.TabIndex = 100;
             this.label6.Text = "Пол:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox
             // 
@@ -290,7 +272,6 @@ namespace Progect
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 102;
             this.label7.Text = "Фото файл:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // photoName
             // 
@@ -299,7 +280,6 @@ namespace Progect
             this.photoName.Name = "photoName";
             this.photoName.Size = new System.Drawing.Size(262, 34);
             this.photoName.TabIndex = 103;
-            this.photoName.TextChanged += new System.EventHandler(this.photoName_TextChanged);
             // 
             // viewing
             // 
@@ -322,7 +302,6 @@ namespace Progect
             this.label8.Size = new System.Drawing.Size(85, 25);
             this.label8.TabIndex = 106;
             this.label8.Text = "Страна:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -334,7 +313,6 @@ namespace Progect
             this.label9.Size = new System.Drawing.Size(167, 25);
             this.label9.TabIndex = 105;
             this.label9.Text = "Дата рождения:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // dateTimePicker1
             // 
@@ -342,7 +320,6 @@ namespace Progect
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(260, 22);
             this.dateTimePicker1.TabIndex = 107;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // country
             // 
@@ -380,7 +357,6 @@ namespace Progect
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // FormDriverRegistrationMenu
             // 
