@@ -147,6 +147,7 @@ namespace Progect
             this.registerRace.TabIndex = 73;
             this.registerRace.Text = "Регестрация на гонку";
             this.registerRace.UseVisualStyleBackColor = true;
+            this.registerRace.Click += new System.EventHandler(this.registerRace_Click);
             // 
             // contact
             // 

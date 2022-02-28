@@ -12,9 +12,15 @@ namespace Progect
 {
     public partial class FormRacer : Form
     {
+        private SQLManager sqlManager = new SQLManager();
         private Customer customer = new Customer();
         DataTable dataTableImport;
-        public DataTable Data_Table { set { dataTableImport = value; } }
+
+        public DataTable Data_Table { 
+            set { 
+                dataTableImport = value;
+            } 
+        }
 
         public FormRacer()
         {
@@ -46,6 +52,16 @@ namespace Progect
             FormEditingProfile formEditingProfile = new FormEditingProfile();
             formEditingProfile.Data_Table = dataTableImport;
             formEditingProfile.Show();
+            this.Hide();
+        }
+
+        private void registerRace_Click(object sender, EventArgs e)
+        {
+            FormRegistrationForRace formRegistrationForRace = new FormRegistrationForRace
+            {
+                Data_Table = dataTableImport
+            };
+            formRegistrationForRace.Show();
             this.Hide();
         }
     }

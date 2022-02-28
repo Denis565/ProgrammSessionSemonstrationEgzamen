@@ -20,3 +20,4 @@ D:\Мпт\4курс\2 семестр\Демонстрационный экзам
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.MainForm.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormDriverRegistrationMenu.resources
 D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormEditingProfile.resources
+D:\Мпт\4курс\2 семестр\Демонстрационный экзамен\Задание\Programm\Progect\Progect\obj\Debug\Progect.FormRegistrationForRace.resources

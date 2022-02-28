@@ -70,6 +70,12 @@
     <Compile Include="FormEditingProfile.Designer.cs">
       <DependentUpon>FormEditingProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegistrationForRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationForRace.Designer.cs">
+      <DependentUpon>FormRegistrationForRace.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditingProfile.resx">
       <DependentUpon>FormEditingProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationForRace.resx">
+      <DependentUpon>FormRegistrationForRace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

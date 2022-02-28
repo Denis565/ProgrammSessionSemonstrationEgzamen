@@ -124,16 +124,13 @@ namespace Progect
                     return;
                 }
 
-                donationAmount.Text = $"{donatNow - donat}";
+                donationAmount.Text = $"{donatNow - 10}";
             }
         }
 
         private void plus_Click(object sender, EventArgs e)
         {
-            if (summOperation.Text.Replace(" ", "") != "")
-            {
-                donationAmount.Text = $"{Convert.ToInt32(donationAmount.Text) + Convert.ToInt32(summOperation.Text)}";
-            }
+            donationAmount.Text = $"{Convert.ToInt32(donationAmount.Text) + 10}";
         }
     }
 }
