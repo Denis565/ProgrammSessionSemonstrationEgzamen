@@ -36,5 +36,11 @@ namespace Progect
             formListСharitableOrganizations.Show();
             this.Hide();
         }
+
+        private void btnKartSkills_Click(object sender, EventArgs e)
+        {
+            new FormInformationKartSkills().Show();
+            this.Hide();
+        }
     }
 }

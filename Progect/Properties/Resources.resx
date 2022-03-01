@@ -124,6 +124,12 @@
   <data name="Informatsia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resurses\Informatsia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logotip_charity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logotip_charity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kart-skill-2017-map-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kart-skill-2017-map-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Klyuch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resurses\Klyuch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,7 +139,7 @@
   <data name="Shlem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resurses\Shlem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logotip_charity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logotip_charity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kart-skill-2017-map-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kart-skill-2017-map-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -43,5 +43,11 @@ namespace Progect
             new FormInformation().Show();
             this.Hide();
         }
+
+        private void pictureBoxEntrance_Click(object sender, EventArgs e)
+        {
+            new FormAutorization().Show();
+            this.Hide();
+        }
     }
 }

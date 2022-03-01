@@ -46,9 +46,6 @@ namespace Progect
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // timer1
-            // 
-            // 
             // panelTop
             // 
             this.panelTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -126,6 +123,7 @@ namespace Progect
             this.btnKartSkills.TabIndex = 3;
             this.btnKartSkills.Text = "Kart Skills 2017";
             this.btnKartSkills.UseVisualStyleBackColor = true;
+            this.btnKartSkills.Click += new System.EventHandler(this.btnKartSkills_Click);
             // 
             // label1
             // 

@@ -83,6 +83,26 @@ namespace Progect.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kart_skill_2017_map_1 {
+            get {
+                object obj = ResourceManager.GetObject("kart-skill-2017-map-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kart_skill_2017_map_2 {
+            get {
+                object obj = ResourceManager.GetObject("kart-skill-2017-map-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Klyuch {
             get {
                 object obj = ResourceManager.GetObject("Klyuch", resourceCulture);

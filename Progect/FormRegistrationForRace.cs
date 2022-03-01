@@ -17,6 +17,8 @@ namespace Progect
         int optionKits;
         double typeRaceAmount;
 
+        private static List<CheckBox> CheckBoxList = new List<CheckBox>();
+
         public DataTable Data_Table
         {
             set
@@ -42,10 +44,55 @@ namespace Progect
             headDate.Text = $"Москва, Россия {DateTime.Now.ToLongDateString()}";
             panelTop.BackColor = Color.FromArgb(180, 180, 180);
 
-            sqlManager.AddComboBox(sponsor, "[dbo].[List_SponsorShip]", 1);
-            sponsor.SelectedIndex = 0;
+            sqlManager.AddComboBox(charatiy, "[dbo].[List_Charity]", 1);
+            charatiy.SelectedIndex = 0;
 
-            optionKits1.Checked = true;
+            //optionKits1.Checked = true;
+            init();
+        }
+
+        int count;
+
+        private void init() 
+        {
+            DataTable dataTable = sqlManager.ReturnTable("select * from [dbo].[List_Event]");
+
+            count = dataTable.Rows.Count;
+
+            for (int i = 0; i < count; i++) {
+                CheckBox chevkBoxInform = new CheckBox();
+                CheckBox lastOldCheckBox = CheckBoxList.LastOrDefault();
+
+                chevkBoxInform.AutoSize = true;
+                chevkBoxInform.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+                chevkBoxInform.Name = "typeRace3";
+                chevkBoxInform.Size = new System.Drawing.Size(181, 24);
+                chevkBoxInform.TabIndex = 80;
+                chevkBoxInform.Text = $@"{dataTable.Rows[i][1]} ({dataTable.Rows[i][5]}$)";
+                chevkBoxInform.UseVisualStyleBackColor = true;
+                chevkBoxInform.CheckedChanged += new System.EventHandler(this.typeRace_CheckedChanged);
+
+                if (lastOldCheckBox == null)
+                {
+                    chevkBoxInform.Location = new System.Drawing.Point(10, 6);
+                    chevkBoxInform.Checked = true;
+                }
+                else
+                {
+                    chevkBoxInform.Location = new System.Drawing.Point(lastOldCheckBox.Location.X, lastOldCheckBox.Location.Y + 20);
+                }
+
+                CheckBoxList.Add(chevkBoxInform);
+
+                panel3.Controls.AddRange(new Control[] {
+                    chevkBoxInform
+                });
+
+            }
+
+            if (count > 0) {
+                registrationFee.Text = dataTable.Rows[0][5].ToString();
+            }
         }
 
         private void logout_Click(object sender, EventArgs e)
@@ -57,18 +104,24 @@ namespace Progect
 
         private void registration_Click(object sender, EventArgs e)
         {
+            if (Convert.ToDouble(amount.Text.ToString())  <= 0.0) {
+                MessageBox.Show("Сумма взноса олжна быть больше 0");
+                return;
+            }
             sqlManager.performingProcedure_decimal(
-                new string[] {idRacer.ToString(), DateTime.Now.ToString("yyyy-MM-dd"), "1",Convert.ToDouble(registrationFee.Text.ToString()).ToString(),"1",Convert.ToDouble(amount.Text.ToString()).ToString() },
+                new string[] {idRacer.ToString(), DateTime.Now.ToString("yyyy-MM-dd"), "1",Convert.ToDouble(registrationFee.Text.ToString()).ToString(),idCharty.ToString(),Convert.ToDouble(amount.Text.ToString()).ToString() },
                 "[dbo].[Registration2_insert]",
                 new string [] { "ID_Racer","Registration_Date","ID_Registration_Status","Cost","ID_Charity","SponsorshipTarget" }
                 );
 
-            FormRacer formRacer = new FormRacer
+            /*FormRacer formRacer = new FormRacer
             { 
                 Data_Table = dataTableImport
             };
             formRacer.Show();
-            this.Hide();
+            this.Hide();*/
+
+            new FormConfirmationRegistrationRacer().Show();
         }
 
         private void radioButton_CheckedChanged(object sender, EventArgs e)
@@ -112,7 +165,7 @@ namespace Progect
                 }
             }
 
-            if (i == 3)
+            if (i == count)
             {
                 checkBox.Checked = true;
             }
@@ -120,10 +173,22 @@ namespace Progect
             registrationFee.Text = (Convert.ToInt32(typeRaceAmount) + optionKits).ToString();
         }
 
-        private void sponsor_SelectedIndexChanged(object sender, EventArgs e)
+        int idCharty;
+
+        private void charatiy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dataTable = sqlManager.ReturnTable($@"select * from [dbo].[SponsorShip_Seartch] ('{sponsor.Text}')");
-            amount.Text = dataTable.Rows[0][2].ToString();
+            DataTable dataTable = sqlManager.ReturnTable($@"select * from [dbo].[Charity_Seartch] ('{charatiy.Text}')");
+            idCharty = Convert.ToInt32(dataTable.Rows[0][0].ToString());
+        }
+
+        private void amount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+
+            if (!Char.IsDigit(number) && number != 8) 
+            {
+                e.Handled = true;
+            }
         }
     }
 }

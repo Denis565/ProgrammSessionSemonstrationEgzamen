@@ -58,6 +58,12 @@
       <DependentUpon>FormAutorization.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
+    <Compile Include="FormConfirmationRegistrationRacer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmationRegistrationRacer.Designer.cs">
+      <DependentUpon>FormConfirmationRegistrationRacer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDriverRegistrationMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,18 @@
     </Compile>
     <Compile Include="FormEditingProfile.Designer.cs">
       <DependentUpon>FormEditingProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformationKartSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformationKartSkills.Designer.cs">
+      <DependentUpon>FormInformationKartSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMapMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMapMax.Designer.cs">
+      <DependentUpon>FormMapMax.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistrationForRace.cs">
       <SubType>Form</SubType>
@@ -133,11 +151,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLManager.cs" />
+    <EmbeddedResource Include="FormConfirmationRegistrationRacer.resx">
+      <DependentUpon>FormConfirmationRegistrationRacer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDriverRegistrationMenu.resx">
       <DependentUpon>FormDriverRegistrationMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditingProfile.resx">
       <DependentUpon>FormEditingProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformationKartSkills.resx">
+      <DependentUpon>FormInformationKartSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMapMax.resx">
+      <DependentUpon>FormMapMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationForRace.resx">
       <DependentUpon>FormRegistrationForRace.cs</DependentUpon>
@@ -203,6 +230,8 @@
     <Content Include="Resources\checkered-flag-sports-tool.ico" />
     <Content Include="Resources\Dengi.png" />
     <Content Include="Resources\Informatsia.png" />
+    <None Include="Resources\kart-skill-2017-map-2.png" />
+    <None Include="Resources\kart-skill-2017-map-1.png" />
     <Content Include="Resources\Klyuch.png" />
     <None Include="Resources\logotip_charity.jpg" />
     <Content Include="Resources\Shlem.png" />

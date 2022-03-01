@@ -37,24 +37,21 @@ namespace Progect
             this.headText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timeEndLable = new System.Windows.Forms.Label();
-            this.pictureBoxReqgistrationRacer = new System.Windows.Forms.PictureBox();
-            this.pictureBoxRegistrationSponsor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxInformation = new System.Windows.Forms.PictureBox();
-            this.pictureBoxEntrance = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBoxEntrance = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInformation = new System.Windows.Forms.PictureBox();
+            this.pictureBoxRegistrationSponsor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReqgistrationRacer = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReqgistrationRacer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistrationSponsor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEntrance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistrationSponsor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReqgistrationRacer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
             // 
             // panelTop
             // 
@@ -112,53 +109,6 @@ namespace Progect
             this.timeEndLable.TabIndex = 2;
             this.timeEndLable.Text = "Kart Skills 2017";
             // 
-            // pictureBoxReqgistrationRacer
-            // 
-            this.pictureBoxReqgistrationRacer.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxReqgistrationRacer.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReqgistrationRacer.Image")));
-            this.pictureBoxReqgistrationRacer.Location = new System.Drawing.Point(54, 213);
-            this.pictureBoxReqgistrationRacer.Name = "pictureBoxReqgistrationRacer";
-            this.pictureBoxReqgistrationRacer.Size = new System.Drawing.Size(237, 159);
-            this.pictureBoxReqgistrationRacer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxReqgistrationRacer.TabIndex = 3;
-            this.pictureBoxReqgistrationRacer.TabStop = false;
-            this.pictureBoxReqgistrationRacer.Click += new System.EventHandler(this.pictureBoxReqgistrationRacer_Click);
-            // 
-            // pictureBoxRegistrationSponsor
-            // 
-            this.pictureBoxRegistrationSponsor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxRegistrationSponsor.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRegistrationSponsor.Image")));
-            this.pictureBoxRegistrationSponsor.Location = new System.Drawing.Point(364, 213);
-            this.pictureBoxRegistrationSponsor.Name = "pictureBoxRegistrationSponsor";
-            this.pictureBoxRegistrationSponsor.Size = new System.Drawing.Size(237, 159);
-            this.pictureBoxRegistrationSponsor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxRegistrationSponsor.TabIndex = 4;
-            this.pictureBoxRegistrationSponsor.TabStop = false;
-            this.pictureBoxRegistrationSponsor.Click += new System.EventHandler(this.pictureBoxRegistrationSponsor_Click);
-            // 
-            // pictureBoxInformation
-            // 
-            this.pictureBoxInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxInformation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation.Image")));
-            this.pictureBoxInformation.Location = new System.Drawing.Point(690, 213);
-            this.pictureBoxInformation.Name = "pictureBoxInformation";
-            this.pictureBoxInformation.Size = new System.Drawing.Size(237, 159);
-            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxInformation.TabIndex = 5;
-            this.pictureBoxInformation.TabStop = false;
-            this.pictureBoxInformation.Click += new System.EventHandler(this.pictureBoxInformation_Click);
-            // 
-            // pictureBoxEntrance
-            // 
-            this.pictureBoxEntrance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxEntrance.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEntrance.Image")));
-            this.pictureBoxEntrance.Location = new System.Drawing.Point(1011, 213);
-            this.pictureBoxEntrance.Name = "pictureBoxEntrance";
-            this.pictureBoxEntrance.Size = new System.Drawing.Size(237, 159);
-            this.pictureBoxEntrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxEntrance.TabIndex = 6;
-            this.pictureBoxEntrance.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -203,7 +153,55 @@ namespace Progect
             this.label4.TabIndex = 9;
             this.label4.Text = "Вход в систему";
             // 
-            // Form1
+            // pictureBoxEntrance
+            // 
+            this.pictureBoxEntrance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxEntrance.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEntrance.Image")));
+            this.pictureBoxEntrance.Location = new System.Drawing.Point(1011, 213);
+            this.pictureBoxEntrance.Name = "pictureBoxEntrance";
+            this.pictureBoxEntrance.Size = new System.Drawing.Size(237, 159);
+            this.pictureBoxEntrance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxEntrance.TabIndex = 6;
+            this.pictureBoxEntrance.TabStop = false;
+            this.pictureBoxEntrance.Click += new System.EventHandler(this.pictureBoxEntrance_Click);
+            // 
+            // pictureBoxInformation
+            // 
+            this.pictureBoxInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxInformation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation.Image")));
+            this.pictureBoxInformation.Location = new System.Drawing.Point(690, 213);
+            this.pictureBoxInformation.Name = "pictureBoxInformation";
+            this.pictureBoxInformation.Size = new System.Drawing.Size(237, 159);
+            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxInformation.TabIndex = 5;
+            this.pictureBoxInformation.TabStop = false;
+            this.pictureBoxInformation.Click += new System.EventHandler(this.pictureBoxInformation_Click);
+            // 
+            // pictureBoxRegistrationSponsor
+            // 
+            this.pictureBoxRegistrationSponsor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBoxRegistrationSponsor.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRegistrationSponsor.Image")));
+            this.pictureBoxRegistrationSponsor.Location = new System.Drawing.Point(364, 213);
+            this.pictureBoxRegistrationSponsor.Name = "pictureBoxRegistrationSponsor";
+            this.pictureBoxRegistrationSponsor.Size = new System.Drawing.Size(237, 159);
+            this.pictureBoxRegistrationSponsor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxRegistrationSponsor.TabIndex = 4;
+            this.pictureBoxRegistrationSponsor.TabStop = false;
+            this.pictureBoxRegistrationSponsor.Click += new System.EventHandler(this.pictureBoxRegistrationSponsor_Click);
+            // 
+            // pictureBoxReqgistrationRacer
+            // 
+            this.pictureBoxReqgistrationRacer.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBoxReqgistrationRacer.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReqgistrationRacer.Image")));
+            this.pictureBoxReqgistrationRacer.Location = new System.Drawing.Point(54, 213);
+            this.pictureBoxReqgistrationRacer.Name = "pictureBoxReqgistrationRacer";
+            this.pictureBoxReqgistrationRacer.Size = new System.Drawing.Size(237, 159);
+            this.pictureBoxReqgistrationRacer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxReqgistrationRacer.TabIndex = 3;
+            this.pictureBoxReqgistrationRacer.TabStop = false;
+            this.pictureBoxReqgistrationRacer.Click += new System.EventHandler(this.pictureBoxReqgistrationRacer_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,17 +219,17 @@ namespace Progect
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1350, 689);
             this.MinimumSize = new System.Drawing.Size(1350, 689);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kart Skills 2017";
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReqgistrationRacer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistrationSponsor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEntrance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRegistrationSponsor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReqgistrationRacer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

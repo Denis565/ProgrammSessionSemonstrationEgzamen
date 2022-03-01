@@ -39,11 +39,8 @@ namespace Progect
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.typeRace1 = new System.Windows.Forms.CheckBox();
-            this.typeRace2 = new System.Windows.Forms.CheckBox();
-            this.typeRace3 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.sponsor = new System.Windows.Forms.ComboBox();
+            this.charatiy = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.amount = new System.Windows.Forms.TextBox();
@@ -61,7 +58,6 @@ namespace Progect
             this.panelTop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // headDate
@@ -154,44 +150,6 @@ namespace Progect
             this.label2.TabIndex = 77;
             this.label2.Text = "Вид гонки";
             // 
-            // typeRace1
-            // 
-            this.typeRace1.AutoSize = true;
-            this.typeRace1.Checked = true;
-            this.typeRace1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.typeRace1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeRace1.Location = new System.Drawing.Point(10, 6);
-            this.typeRace1.Name = "typeRace1";
-            this.typeRace1.Size = new System.Drawing.Size(181, 24);
-            this.typeRace1.TabIndex = 78;
-            this.typeRace1.Text = "Заезд 2,5 км (25$)";
-            this.typeRace1.UseVisualStyleBackColor = true;
-            this.typeRace1.CheckedChanged += new System.EventHandler(this.typeRace_CheckedChanged);
-            // 
-            // typeRace2
-            // 
-            this.typeRace2.AutoSize = true;
-            this.typeRace2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeRace2.Location = new System.Drawing.Point(10, 45);
-            this.typeRace2.Name = "typeRace2";
-            this.typeRace2.Size = new System.Drawing.Size(168, 24);
-            this.typeRace2.TabIndex = 79;
-            this.typeRace2.Text = "Заезд 4 км (40$)";
-            this.typeRace2.UseVisualStyleBackColor = true;
-            this.typeRace2.CheckedChanged += new System.EventHandler(this.typeRace_CheckedChanged);
-            // 
-            // typeRace3
-            // 
-            this.typeRace3.AutoSize = true;
-            this.typeRace3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeRace3.Location = new System.Drawing.Point(10, 85);
-            this.typeRace3.Name = "typeRace3";
-            this.typeRace3.Size = new System.Drawing.Size(181, 24);
-            this.typeRace3.TabIndex = 80;
-            this.typeRace3.Text = "Заезд 6,6 км (65$)";
-            this.typeRace3.UseVisualStyleBackColor = true;
-            this.typeRace3.CheckedChanged += new System.EventHandler(this.typeRace_CheckedChanged);
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -203,16 +161,16 @@ namespace Progect
             this.label3.TabIndex = 81;
             this.label3.Text = "Детали спонсорства";
             // 
-            // sponsor
+            // charatiy
             // 
-            this.sponsor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sponsor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sponsor.FormattingEnabled = true;
-            this.sponsor.Location = new System.Drawing.Point(145, 397);
-            this.sponsor.Name = "sponsor";
-            this.sponsor.Size = new System.Drawing.Size(408, 28);
-            this.sponsor.TabIndex = 82;
-            this.sponsor.SelectedIndexChanged += new System.EventHandler(this.sponsor_SelectedIndexChanged);
+            this.charatiy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.charatiy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.charatiy.FormattingEnabled = true;
+            this.charatiy.Location = new System.Drawing.Point(145, 397);
+            this.charatiy.Name = "charatiy";
+            this.charatiy.Size = new System.Drawing.Size(408, 28);
+            this.charatiy.TabIndex = 82;
+            this.charatiy.SelectedIndexChanged += new System.EventHandler(this.charatiy_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -238,19 +196,19 @@ namespace Progect
             // 
             // amount
             // 
-            this.amount.Enabled = false;
             this.amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.amount.Location = new System.Drawing.Point(145, 444);
             this.amount.Name = "amount";
             this.amount.Size = new System.Drawing.Size(408, 30);
             this.amount.TabIndex = 85;
+            this.amount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.amount_KeyPress);
             // 
             // registration
             // 
             this.registration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.registration.Location = new System.Drawing.Point(34, 518);
             this.registration.Name = "registration";
-            this.registration.Size = new System.Drawing.Size(150, 42);
+            this.registration.Size = new System.Drawing.Size(246, 42);
             this.registration.TabIndex = 86;
             this.registration.Text = "Регестрация";
             this.registration.UseVisualStyleBackColor = true;
@@ -259,9 +217,9 @@ namespace Progect
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(229, 518);
+            this.button1.Location = new System.Drawing.Point(324, 518);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 42);
+            this.button1.Size = new System.Drawing.Size(229, 42);
             this.button1.TabIndex = 87;
             this.button1.Text = "Отмена";
             this.button1.UseVisualStyleBackColor = true;
@@ -328,12 +286,10 @@ namespace Progect
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.typeRace1);
-            this.panel3.Controls.Add(this.typeRace2);
-            this.panel3.Controls.Add(this.typeRace3);
+            this.panel3.AutoScroll = true;
             this.panel3.Location = new System.Drawing.Point(34, 225);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(216, 124);
+            this.panel3.Size = new System.Drawing.Size(519, 124);
             this.panel3.TabIndex = 93;
             // 
             // label
@@ -385,7 +341,7 @@ namespace Progect
             this.Controls.Add(this.amount);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.sponsor);
+            this.Controls.Add(this.charatiy);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -401,8 +357,6 @@ namespace Progect
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,11 +373,8 @@ namespace Progect
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox typeRace1;
-        private System.Windows.Forms.CheckBox typeRace2;
-        private System.Windows.Forms.CheckBox typeRace3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox sponsor;
+        private System.Windows.Forms.ComboBox charatiy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox amount;
